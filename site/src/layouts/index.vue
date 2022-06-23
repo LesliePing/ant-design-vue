@@ -38,7 +38,7 @@
       <a-col :xxxl="20" :xxl="20" :xl="19" :lg="18" :md="18" :sm="24" :xs="24">
         <section :class="mainContainerClass">
           <!-- <TopAd :is-c-n="isZhCN" /> -->
-          <WWAdsVue v-if="isZhCN" />
+          <!-- <WWAdsVue v-if="isZhCN" /> -->
           <Demo v-if="isDemo" :page-data="pageData" :is-zh-c-n="isZhCN">
             <component :is="matchCom" />
           </Demo>
@@ -98,7 +98,7 @@ import RightBottomAd from '../components/rice/right_bottom_rice.vue';
 import { CloseOutlined, MenuOutlined, LinkOutlined } from '@ant-design/icons-vue';
 import ThemeIcon from './ThemeIcon.vue';
 import surelyVueVue from '../components/surelyVue.vue';
-import WWAdsVue from '../components/rice/WWAds.vue';
+// import WWAdsVue from '../components/rice/WWAds.vue';
 
 const rControl = /[\u0000-\u001f]/g;
 const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'<>,.?/]+/g;
@@ -118,7 +118,7 @@ export default defineComponent({
     MenuOutlined,
     ThemeIcon,
     surelyVueVue,
-    WWAdsVue,
+    // WWAdsVue,
     LinkOutlined,
   },
   setup() {
